@@ -341,7 +341,7 @@
     .gallery-wrap { position:relative; padding:0 56px; }
     .gallery-track { display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; -ms-overflow-style:none; padding-bottom:2px; }
     .gallery-track::-webkit-scrollbar { display:none; }
-    .gallery-item img {max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain;}
+    .gallery-item { flex:0 0 calc(33.333% - 10px); aspect-ratio:3/4; scroll-snap-align:start; background:var(--bg-card); border-radius:2px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; color:var(--cream-dim); opacity:.28; border:1px solid rgba(201,149,44,.1); transition:opacity .3s; }
     .gallery-item:hover { opacity:.5; }
     .gallery-item span { font-family:'EB Garamond',serif; font-style:italic; font-size:13px; letter-spacing:2px; }
     .gal-arrow { position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; border:1px solid rgba(201,149,44,.25); border-radius:50%; background:rgba(26,10,14,.6); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:2; transition:border-color .3s, background .3s; }
