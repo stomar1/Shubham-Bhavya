@@ -341,7 +341,7 @@
     .gallery-wrap { position:relative; padding:0 56px; }
     .gallery-track { display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; -ms-overflow-style:none; padding-bottom:2px; }
     .gallery-track::-webkit-scrollbar { display:none; }
-    .gallery-item { flex:0 0 calc(33.333% - 10px); aspect-ratio:3/4; scroll-snap-align:start; background:var(--bg-card); border-radius:2px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; color:var(--cream-dim); opacity:.28; border:1px solid rgba(201,149,44,.1); transition:opacity .3s; }
+    .gallery-item img {max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain;}
     .gallery-item:hover { opacity:.5; }
     .gallery-item span { font-family:'EB Garamond',serif; font-style:italic; font-size:13px; letter-spacing:2px; }
     .gal-arrow { position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; border:1px solid rgba(201,149,44,.25); border-radius:50%; background:rgba(26,10,14,.6); backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:2; transition:border-color .3s, background .3s; }
@@ -381,9 +381,7 @@
     .insta-btn:hover { border-color:var(--gold); background:rgba(201,149,44,.1); transform:scale(1.08) rotate(6deg); }
     .insta-btn svg { color:var(--cream); opacity:.7; }
 
-    /* ═══════════════════════════
-       FOOTER — temple as scene
-    ═══════════════════════════ */
+    /* FOOTER */
     #footer {
       background:var(--bg);
       position:relative;
@@ -907,31 +905,35 @@
   <div class="gallery-wrap">
     <div class="gallery-track" id="gtrack">
       <div class="gallery-item" style="opacity:1;padding:0;border:none;">
-  <img src="gallery-1.jpeg" alt="Photo 1"
+  <img src="G1.jpg" alt="Photo 1"
        style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
 </div>
       <div class="gallery-item" style="opacity:1;padding:0;border:none;">
-  <img src="gallery-2.JPG" alt="Photo 2"
+  <img src="G2.jpg" alt="Photo 2"
        style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
 </div>
   <div class="gallery-item" style="opacity:1;padding:0;border:none;">
-    <img src="gallery-3.JPG" alt="Photo 3"
+    <img src="G3.jpg" alt="Photo 3"
        style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
 </div>
   <div class="gallery-item" style="opacity:1;padding:0;border:none;">
-    <img src="gallery-4.jpg" alt="Photo 4"
+    <img src="G4.jpg" alt="Photo 4"
        style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
 </div>
   <div class="gallery-item" style="opacity:1;padding:0;border:none;">
-    <img src="gallery-5.jpg" alt="Photo 5"
+    <img src="G5.jpg" alt="Photo 5"
        style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
 </div>
   <div class="gallery-item" style="opacity:1;padding:0;border:none;">
-    <img src="gallery-6.jpg" alt="Photo 6"
+    <img src="G6.jpg" alt="Photo 6"
        style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
 </div>
   <div class="gallery-item" style="opacity:1;padding:0;border:none;">
-    <img src="gallery-7.jpg" alt="Photo 7"
+    <img src="gallery-2.JPG" alt="Photo 7"
+       style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
+</div>
+  <div class="gallery-item" style="opacity:1;padding:0;border:none;">
+    <img src="gallery-3.JPG" alt="Photo 8"
        style="width:100%;height:100%;object-fit:cover;border-radius:2px;">
 </div>
     <button class="gal-arrow prev" onclick="scrollG(-1)" aria-label="Previous">
